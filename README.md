@@ -1,6 +1,13 @@
 # Домашнее задание №1: кластер HDFS
 
-Для задания использовал Hadoop 3.4.3 и Docker Compose. Кластер состоит из пяти контейнеров:
+Работу выполнила команда из четырёх человек:
+
+- Сланов Алан;
+- Сердюк Михаил;
+- Калугин Дмитрий;
+- Антышев Илья.
+
+Для задания использовали Hadoop 3.4.3 и Docker Compose. Кластер состоит из пяти контейнеров:
 
 - `namenode` — хранит метаданные и информацию о расположении блоков;
 - `secondarynamenode` — периодически создаёт контрольные точки метаданных;
@@ -111,17 +118,3 @@ bash scripts/reset.sh --delete-all-data
 - `.github/workflows/hdfs.yml` — запуск тестов через GitHub Actions.
 
 Статус выполненных проверок указан в [VALIDATION.md](VALIDATION.md). Во вкладке Actions можно посмотреть результат автоматического запуска и скачать отчёты.
-
-## Если запуск не получился
-
-Сначала проверить `docker info` и `docker compose logs --tail 100`. Если Docker на паузе, нажать Resume. Если контейнеры завершаются из-за нехватки памяти, увеличить память Docker. Если занят порт 9870 или 9868, освободить его либо изменить внешний порт в `compose.yaml`.
-
-Стенд предназначен для локальной работы: веб-интерфейсы доступны только с этого компьютера, а HDFS-команды выполняются внутри контейнеров. Ссылки на внутренние адреса DataNode из интерфейса могут не открываться в браузере компьютера.
-
-## Документация
-
-При настройке использовал документацию Apache:
-
-- [Настройка кластера Hadoop](https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-common/ClusterSetup.html)
-- [HDFS Users Guide](https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html)
-- [Команды HDFS](https://hadoop.apache.org/docs/r3.4.3/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html)
