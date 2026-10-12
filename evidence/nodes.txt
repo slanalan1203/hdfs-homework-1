@@ -1,0 +1,1 @@
+PASS: 3 live DataNodes, 0 dead, all In Service, 0 failed volumes, safe mode OFF

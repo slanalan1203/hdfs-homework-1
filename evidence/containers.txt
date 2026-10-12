@@ -1,0 +1,6 @@
+NAME                                IMAGE                 COMMAND                  SERVICE             CREATED              STATUS                        PORTS
+hdfs-homework-datanode1-1           hdfs-homework:3.4.3   "/usr/bin/tini -- /u…"   datanode1           About a minute ago   Up About a minute (healthy)   
+hdfs-homework-datanode2-1           hdfs-homework:3.4.3   "/usr/bin/tini -- /u…"   datanode2           About a minute ago   Up About a minute (healthy)   
+hdfs-homework-datanode3-1           hdfs-homework:3.4.3   "/usr/bin/tini -- /u…"   datanode3           About a minute ago   Up About a minute (healthy)   
+hdfs-homework-namenode-1            hdfs-homework:3.4.3   "/usr/bin/tini -- /u…"   namenode            About a minute ago   Up About a minute (healthy)   127.0.0.1:9870->9870/tcp
+hdfs-homework-secondarynamenode-1   hdfs-homework:3.4.3   "/usr/bin/tini -- /u…"   secondarynamenode   About a minute ago   Up About a minute (healthy)   127.0.0.1:9868->9868/tcp

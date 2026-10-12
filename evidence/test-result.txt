@@ -1,0 +1,11 @@
+PASS: 3 live DataNodes, 0 dead, all In Service, 0 failed volumes, safe mode OFF
+PASS: write/read and three actual block replicas
+PASS: SecondaryNameNode produced a checkpoint
+PASS: no ERROR/FATAL records in available container logs
+PASS: HDFS verification completed; reports saved in reports/
+PASS: 3 live DataNodes, 0 dead, all In Service, 0 failed volumes, safe mode OFF
+PASS: write/read and three actual block replicas
+PASS: SecondaryNameNode produced a checkpoint
+PASS: no ERROR/FATAL records in available container logs
+PASS: HDFS verification completed; reports saved in reports/
+PASS: file survived container recreation
